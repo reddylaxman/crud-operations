@@ -5,7 +5,7 @@
   margin-bottom: 10px;
 }
 .navBlock > article {
-  width: 80%;
+  width: 95%;
   height: inherit;
   margin: 0px auto;
   display: flex;
@@ -14,8 +14,7 @@
 }
 
 .logo {
-  width: 100px;
-  height: 40;
+  width: 120px;
 }
 .menuBlock > ul {
   list-style-type: none;
@@ -31,4 +30,9 @@
 
 .menuBlock > ul > li > a:hover {
   color: dodgerblue;
+}
+
+.menuBlock > ul > li > a:focus {
+  color: dodgerblue;
+  font-weight: 600;
 }
