@@ -7,6 +7,7 @@ export const Logo = () => {
       <Link to="/">
         <img
           src="https://edisonlms-fs.s3.amazonaws.com/tenant_onlinelearning/iidt_logo_137.png"
+          alt="logo"
           className={styles.logo}
         />
       </Link>

@@ -1,0 +1,70 @@
+.formBlock {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+}
+
+.formBlock > form {
+  width: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.formBlock > form > div {
+  width: 500px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.genderGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.genderOptions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genderOptions input {
+  margin-left: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
