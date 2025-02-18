@@ -1,4 +1,5 @@
 {
+  "homepage": "https://reddylaxman.github.io/crud-operations/",
   "name": "training-project",
   "version": "0.1.0",
   "private": true,
@@ -12,16 +13,22 @@
     "json-server": "^1.0.0-beta.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.0.3",
+    "redux": "^5.0.1",
+    "redux-logger": "^3.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server --watch ./db.json --port 3133"
   },
   "eslintConfig": {
     "extends": [

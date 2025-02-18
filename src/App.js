@@ -1,17 +1,36 @@
 import React from "react";
-// import { MyNavbar } from "./components/MyNavbar";
+import CakeContainer from "./reduxComponent/CakeContainer";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+const App = () => {
+  return (
+    <div>
+      <Provider store={store}>
+        <CakeContainer />
+      </Provider>
+    </div>
+  );
+};
+
+export default App;
+
+{
+  /*
+import React from "react";
+import { MyNavbar } from "./components/MyNavbar";
 import { Route, Routes } from "react-router-dom";
-// import { Dashboard } from "./pages/Dashboard";
-// import { Classrooms } from "./pages/Classrooms";
-// import { Assessments } from "./pages/Assessments";
-// import { Calendar } from "./pages/Calendar";
-// import { Store } from "./pages/Store";
-// import { News } from "./pages/News";
-// import { Blog } from "./pages/Blog";
-// import { PageNotFound } from "./pages/PageNotFound";
-// import { Profile } from "./components/Profile";
-// import { MyAccount } from "./pages/MyAccount";
-// import { MySettings } from "./pages/MySettings";
+import { Dashboard } from "./pages/Dashboard";
+import { Classrooms } from "./pages/Classrooms";
+import { Assessments } from "./pages/Assessments";
+import { Calendar } from "./pages/Calendar";
+import { Store } from "./pages/Store";
+import { News } from "./pages/News";
+import { Blog } from "./pages/Blog";
+import { PageNotFound } from "./pages/PageNotFound";
+import { Profile } from "./components/Profile";
+import { MyAccount } from "./pages/MyAccount";
+import { MySettings } from "./pages/MySettings";
 import Home from "./crudcomponents/Home";
 import Create from "./crudcomponents/Create";
 import Edit from "./crudcomponents/Edit";
@@ -31,8 +50,6 @@ const App = () => {
 
 export default App;
 
-{
-  /*
     <div>
 
       <MyNavbar />
